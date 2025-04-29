@@ -14,7 +14,7 @@ if %errorlevel% neq 0 (
 
 if not exist "C:\Program Files\MSP_PerformanceSender" mkdir "C:\Program Files\MSP_PerformanceSender"
 
-curl -L "https://raw.githubusercontent.com/MetasoftPro/ryjssyjrsryj/refs/heads/main/LastVersion.txt" -o "C:\Program Files\MSP_PerformanceSender\OnlineVersion.txt" -s
+curl -L "https://raw.githubusercontent.com/MetasoftPro/MSP_PerformanceSender/refs/heads/main/LastVersion.txt" -o "C:\Program Files\MSP_PerformanceSender\OnlineVersion.txt" -s
 
 set "PERFORMANCE_MONITOR_ONLINE_VERSION=-1"
 for /f "usebackq delims=" %%A in ("C:\Program Files\MSP_PerformanceSender\OnlineVersion.txt") do (
